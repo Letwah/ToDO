@@ -1,0 +1,14 @@
+.Incomplete {
+  background-color: rgb(215, 185, 140);
+  color: black;
+}
+
+.Complete {
+  background-color: rgb(117, 141, 237);
+  color: black;
+}
+
+.item {
+  margin: 20px;
+  padding: 20px;
+}
