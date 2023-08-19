@@ -20,12 +20,14 @@ const updateInterface = () => {
   //run the filter
 
   const filteredVersion = todos.filter((todo) => {
-    return todo.title === filter;
+    return todo.title.toLowerCase().includes(filter.toLowerCase());
   });
+
+  console.log(todos, filter, filteredVersion);
 
   filteredVersion.reverse();
 
-  const html = todos.map((item) => {
+  const html = filteredVersion.map((item) => {
     return `<div id = "${item.title}" class = "item ${
       item.completed === true ? "Complete" : "Incomplete"
     }">
